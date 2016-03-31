@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+    <head>
+    	<title>Acceuil - Extia Cooptation</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="js/move.js"></script>
+		<link href="css/acceuil.css" rel="stylesheet">
+    </head>
+    <body>
+  	<section class="grayscale">
+  		<video autoplay loop id="bgvid">
+    		<source src="asset/video/kilix.webm">
+		</video>
+	</section>
+    <div id="intro">
+		    <section class="logo">
+		    	<center><img src="asset/img/Logo_FINAL.png" alt="Extia" style="width:20%;margin-top:3%;background-size: cover;">
+		    	<h1 style="color:white;">- My Cooptation -</h1></center>
+		    </section>
+		    <div class="round-button">
+		    	<button type="button" class="round-button-circle1" id="Connexion"><span>Connexion</span></button>
+
+			   	<div class="modal fade" id="Connexion_modal" role="dialog" style="">
+				    <div class="modal-dialog">
+				    
+				      <div class="modal-content">
+				        <div class="modal-header">
+				          <button type="button" class="close" data-dismiss="modal">&times;</button>
+				          <center><h4 class="modal-title" style="color:#F26e27"><img src="asset/img/Logo_FINAL.png" alt="Extia" style="width:20%;margin-left:9%;background-size:cover;"><br>Connexion</h4><center>
+				        </div>
+				        <div class="modal-body" style="background-color:#394147;">
+				            <center><form action="connexionbd.php" method="post" >
+				                <div>
+				                    <input type="text" name="name" placeholder="Nom d'utilisateur" style="color:black;"/>
+				                </div>
+				                <br>
+				                <div>
+				                    <input type="password" name="pass" placeholder="Mot de Passe" style="color:black;"/>
+				                </div>
+				                <div>
+				                	<br>
+				                    <button class="btn btn-default" type="submit" style="outline: 0">Connexion</button><br><br>
+				                    <a href="" style="color:#F26e27">Mot de passe oublier? </br></a>
+				                </div>
+				            </form></center>
+				        </div>
+				      </div>
+				      
+				    </div>
+				  </div>
+
+		    	<button type="button" class="round-button-circle2" id="Inscription"><span>Inscription</span></button>
+
+		    	<div class="modal fade" id="Inscription_modal" role="dialog">
+				    <div class="modal-dialog">
+				    
+				      <div class="modal-content" style="margin-top:5%;">
+				        <div class="modal-header">
+				          <button type="button" class="close" data-dismiss="modal">&times;</button>
+				          <center><h4 class="modal-title" style="color:#F26e27"><img src="asset/img/Logo_FINAL.png" alt="Extia" style="width:20%;margin-left:9%;background-size:cover;"><br>Inscription</h4><center>
+				        </div>
+				        <div class="modal-body" style="background-color:#394147;">
+				            <center><form action="inscrir.php" method="post" >
+				            	<br>
+				            	<p>Informations de connexions:</p>
+				                <br>
+				                <div>
+				                    <input type="text" name="login" placeholder="Nom d'utilisateur" style="color:black;"/>
+				                </div>
+				                <br>
+				                <div>
+				                    <input type="text" name="mail" placeholder="Email"style="color:black;"/>
+				                </div>
+				                <br>
+				                <div>
+				                    <input type="password" name="pass" placeholder="Mot de passe"style="color:black;"/>
+				                </div>
+				                <br>
+				                <div>
+				                    <input type="password" name="cpass" placeholder="Confirmer le mdp"style="color:black;"/>
+				                </div>
+				                <div>
+				                <br>
+				                <div>
+				                	<hr style="width:45%"></hr>
+				                    <p>Informations personnelles:</p>
+				                </div>
+				               <br>
+				                <div>
+				                    <input type="text" name="fname" placeholder="Nom"style="color:black;"/>
+				                </div>
+				                <br>
+				                <div>
+				                    <input type="text" name="lname" placeholder="Prénom"style="color:black;"/>
+				                </div>
+				                <br>
+				                <div>
+				                    <select type="select" name="cpass" value="agence" style="color:black;">
+				                    	  <option value="ag1" selected>CGA</option>
+										  <option value="ag2">BCH</option>
+										  <option value="ag3">BRE</option>
+										  <option value="ag4">RHA</option>
+										  <option value="ag5">NPC</option>
+										  <option value="ag6">BXL</option>
+										  <option value="ag7">PACA</option>
+										  <option value="ag8">SUISSE</option>
+										  <option value="ag9">INTERNE</option>
+				                    </select>
+				                </div>
+				                <hr style="width:20%;"></hr><br>
+				                     <button class="btn btn-default" type="submit" style="outline: 0">Valider</button><br><br>
+				            </form></center>
+				        </div>
+				      </div>
+				      
+				    </div>
+				</div>
+			</div>
+
+			  
+	    	<center><h3 style="margin-top:3%;color:white;">La cooptation, qu'est-ce que c'est?</h3><a href="#second"><img src="asset/img/picto_landing_home.svg" style="width:5%;"></a><br><br></center>
+	</div>
+	<div style="margin-top:10%;background-color:#394147" id="second">
+		<section style="display: inline-block;">
+			<img src="asset/img/copt1.jpg" style="width:40%;">
+			<a href="#intro"><img src="asset/img/up.png" style="width:5%;margin-left: 7.5%;position:bottom;"></a>
+			<img src="asset/img/copt2.jpg" style="width:40%;float:right;">
+		</section>
+	</div>
+	<script src="js/acceuil.js"></script>
+    </body>
